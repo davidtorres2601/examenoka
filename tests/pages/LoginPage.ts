@@ -12,7 +12,6 @@ export class LoginPage {
     this.loginButton=page.getByRole("button",{name:'Login'})
   }
 
-
   async fillUsername(username:string){
     await this.usernameText.fill(username)
   }
@@ -31,12 +30,11 @@ export class LoginPage {
        await this.clickOnLogin();
 
   }
+
+
   /** 
 
-  async navigate() {
-    await this.page.goto('https://opensourcedemo.orangehrmlive.com/web/index.php/dashboard/index');
-    expect(await this.page.title()).toContain('OrangeHRM');
-  }
+  
 
 
   async login(username: string, password: string) {
